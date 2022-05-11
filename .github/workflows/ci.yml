@@ -17,7 +17,7 @@ jobs:
   drive-test: 
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
       - run: |
           cd example-py-unittest
           python -m unittest discover
