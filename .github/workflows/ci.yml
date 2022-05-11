@@ -10,5 +10,5 @@ jobs:
     steps:
       - run: echo "Hello, World"
       - run: |
-        echo look ma
-        echo I'm a two-liner!
+          echo look ma
+          echo I'm a two-liner!
