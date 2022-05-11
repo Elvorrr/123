@@ -4,4 +4,11 @@ name: Example workflow
 # Controls when the workflow will run
 on:
   push:
-    run: echo "Hello, World"
+
+jobs:
+  hello:
+    steps:
+      - run: echo "Hello, World"
+      - run: |
+        echo look ma
+        echo I'm a two-liner!
