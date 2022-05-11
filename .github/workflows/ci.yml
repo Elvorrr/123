@@ -13,3 +13,11 @@ jobs:
       - run: |
           echo look ma
           echo "I'm a two-liner!"
+
+  drive-test: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - run: |
+          cd example-py-unittest
+          python -m unittest discover
